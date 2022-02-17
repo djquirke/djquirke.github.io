@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display" rel="stylesheet">
+
+	<title>Frontend Mentor | Order summary card</title>
+
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+		:root {
+			--card-width: 450px;
+			--card-border-radius: 20px;
+		}
+		
+		.container {
+			background-image: url("images/pattern-background-desktop.svg");
+			background-repeat: no-repeat;
+			background-color: hsl(225, 100%, 94%);
+			width: 1440px;
+			margin: auto;
+			padding: 100px 0;
+		}
+		
+		.card {
+			background-color: #fff;
+			box-shadow: 0 10px 50px -25px hsl(224, 23%, 55%);
+			width: var(--card-width);
+			border-radius: var(--card-border-radius);
+			margin: 0 auto;
+		}
+		
+		.top-image {
+			width: var(--card-width);
+			border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+		}
+		
+		.info-container {
+			padding: 20px 40px;
+			text-align: center;
+		}
+		
+		.text-success-description {
+			padding: 0 20px;
+		}
+		
+		.plan-container {
+			background-color: hsl(225, 100%, 98%);
+			border-radius: 10px;
+			position: relative;
+			height: 88px;
+		}
+		
+		.music-icon {
+			position: absolute;
+			padding: 20px;
+			left: 0;
+		}
+		
+		.plan-text-annual-plan {
+			position: absolute;
+			left: 88px;
+		}
+		
+		.plan-text-price {
+			position: absolute;
+			top: 30px;
+			left: 88px;
+		}
+		
+		.plan-text-change {
+			position: absolute;
+			right: 20px;
+			top: calc(50% - 0.5rem);
+			margin: 0;
+			color: hsl(245, 75%, 52%);
+			text-decoration: underline;
+		}
+		
+		.plan-text-change:hover {
+			color: hsl(253, 100%, 62%);
+			cursor: pointer;
+			text-decoration: none;
+		}
+		
+		.button-style {
+			background-color: hsl(245, 75%, 52%);
+			box-shadow: 0 10px 40px -10px hsl(245, 75%, 52%);
+			color: #fff;
+			border-radius: 10px;
+			font-family: "Red Hat Display", monospace;
+			padding: 15px;
+			margin: 30px 0;
+		}
+		
+		.button-style:hover {
+			background-color: hsl(253, 100%, 62%);
+			cursor: pointer;
+		}
+		
+		.text-cancel-order:hover {
+			color: hsl(223, 47%, 23%);
+			cursor: pointer;
+		}
+		
+		h2, h3, p {
+			font-family: "Red Hat Display", monospace;
+		}
+		
+		h2, h3 {
+			color: hsl(223, 47%, 23%);
+		}
+		
+		h2 {
+			font-weight: 900;
+		}
+		
+		h3 {
+			font-weight: 700;
+		}
+		
+		p {
+			font-size: 16px;
+			font-weight: 500;
+			color: hsl(224, 23%, 55%);
+		}
+		
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="card">
+			<img class="top-image" src="images/illustration-hero.svg" alt="Photo of success">
+			<div class="info-container">
+				<h2><strong>Order Summary</strong></h2>
+
+				<p class="text-success-description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+				
+				<div class="plan-container">
+					<img class="music-icon" src="images/icon-music.svg" alt="Music icon">
+					<h3 class="plan-text-annual-plan"><strong>Annual Plan</strong></h3>
+					<p class="plan-text-price">$59.99/year</p>
+					<p class="plan-text-change"><strong>Change</strong><p>
+				</div>
+
+				<div class="button-style">Proceed to Payment</div>
+				<p class="text-cancel-order"><strong>Cancel Order</strong></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
