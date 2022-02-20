@@ -49,35 +49,25 @@
 			.plan-container {
 				background-color: hsl(225, 100%, 98%);
 				border-radius: 10px;
-				position: relative;
-				height: 88px;
-			}
-			
-			.music-icon {
-				position: absolute;
 				padding: 20px;
-				left: 0;
+				display: flex;
+				align-items: center;
 			}
 			
-			.plan-text-annual-plan {
-				position: absolute;
-				left: 88px;
-				top: 5px;
+			.plan-text {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				text-align: left;
+				padding-left: 20px;
 			}
 			
-			.plan-text-price {
-				position: absolute;
-				top: 30px;
-				left: 88px;
+			.plan-text h2, .plan-text p {
+				margin: 0;
 			}
 			
 			.plan-text-change {
-				position: absolute;
-				right: 20px;
-				top: calc(50% - 0.5rem);
-				margin: 0;
-				color: hsl(245, 75%, 52%);
-				text-decoration: underline;
+				margin: 0 0 0 auto;
 			}
 			
 			.plan-text-change:hover {
@@ -142,9 +132,11 @@
 						<p class="text-success-description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
 						
 						<div class="plan-container">
-							<img class="music-icon" src="images/icon-music.svg" alt="Music icon">
-							<h2 class="plan-text-annual-plan"><strong>Annual Plan</strong></h2>
-							<p class="plan-text-price">$59.99/year</p>
+							<img src="images/icon-music.svg" alt="Music icon">
+							<div class="plan-text">
+								<h2 class="plan-text-annual-plan"><strong>Annual Plan</strong></h2>
+								<p class="plan-text-price">$59.99/year</p>
+							</div>
 							<p class="plan-text-change"><strong>Change</strong><p>
 						</div>
 
